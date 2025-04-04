@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ChildA from './child/ChildA'
 const DATA = [
     {
         id: 1,
@@ -27,22 +28,53 @@ const DATA = [
 ]
 const LoginPage = () => {
 
+    // useState -> first Hook
 
-    let userName = "JOHN"
-    const handleSubmit = () => {
-        userName = "VIKAS"
+    const [userName, setUsername] = useState('')
+    console.log(userName)
+    // const [count, setCount] = useState(0)
 
-        console.log(userName)
-    }
+    // let userName = "JOHN"
+    // const handleSubmit = () => {
+    //     userName = "VIKAS"
+
+    //     console.log(userName)
+    // }
 
 
     return (
         <div>
             <h4>Login Page </h4>
-            <h3>{userName}</h3>
-            <button onClick={() => { handleSubmit() }}>SUBMIT</button>
+            {/* PropS start */}
+
+            Name : <input placeholder='username' value={userName} onChange={(e) => setUsername(e.target.value)} /><br /><br />
+            <ChildA userName={userName}/>
+
+
+
+
+            {/* PropS end */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {/* Name : <input placeholder='username' value={userName} onChange={(e) => setUsername(e.target.value)} /><br /><br />
+            Male : <input type="checkbox" name="male" id="male" value={'Male'} /> <br />
+            Female : <input type="checkbox" name="female" id="female" value={'Female'} /> <br />
+            Other : <input type="checkbox" name="other" id="other" value={'Other'} /> <br /> */}
+            {/* <h3>{userName}</h3>
+            <button onClick={() => { handleSubmit() }}>SUBMIT</button> */}
             {/* Looping in JSX */}
-            {
+            {/*{
                 DATA.map((item) => {
                     return (
                         <div key={item.id}>
@@ -52,7 +84,9 @@ const LoginPage = () => {
                         </div>
                     )
                 })
-            }
+}*/}
+
+
 
 
         </div>
