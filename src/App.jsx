@@ -1,8 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
-import LoginPage, {  height, SignupPage } from './screens/LoginPage'
+import LoginPage, { height, SignupPage } from './screens/LoginPage'
+import UseEffectHook from './screens/useEffectHook/UseEffectHook'
+import UseRefHook from './screens/useRefHook/UseRefHook'
+import UseStateHook from './screens/useStateHook/UseStateHook'
 
 
 const App = () => {
@@ -16,11 +17,14 @@ const App = () => {
   return (
     <div>
 
-      <h1>{name}</h1>
-      <h1>{height}</h1>
-      <h2>WELCOME APP 2</h2>
-      <LoginPage />
-      <SignupPage />
+      {/* <h1>{name}</h1>
+      <h1>{height}</h1> */}
+      <h2>WELCOME TO APP </h2>
+      {/* <LoginPage />
+      <SignupPage /> */}
+      {/* <UseStateHook /> */}
+      {/* <UseEffectHook /> */}
+      <UseRefHook />
     </div>
   )
 
