@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "content": "This is some content"
+    },
+    {
+      "id": 1747908853427,
+      "title": "React Js",
+      "content": "Api calling"
+    },
+    {
+      "id": 1747908919423,
+      "title": "React Native ",
+      "content": "Drawer"
+    },
+    {
+      "id": 1747909528595,
+      "title": "gh",
+      "content": "cvbn"
+    },
+    {
+      "id": 1747909549092,
+      "title": "fghj",
+      "content": "cvb"
+    },
+    {
+      "id": 1747909591402,
+      "title": "ghj",
+      "content": "fghjk"
+    },
+    {
+      "id": 1747910302470,
+      "title": "React Native ",
+      "content": "Drawer1"
+    },
+    {
+      "id": 1747910335168,
+      "title": "React Native ",
+      "content": "Drawer1"
+    }
+  ]
+}
