@@ -1,4 +1,5 @@
 import "./App.css";
+import FormikHook from "./screens/FormikHook";
 import LoginPage, { height, SignupPage } from "./screens/LoginPage";
 import ShowPost from "./screens/ShowPost";
 import UseEffectHook from "./screens/useEffectHook/UseEffectHook";
@@ -16,7 +17,8 @@ const App = () => {
       {/* <UseStateHook /> */}
       {/* <UseEffectHook /> */}
       {/* <UseRefHook /> */}
-      <ShowPost />
+      {/* <ShowPost /> */}
+      <FormikHook />
     </div>
   );
 };

@@ -38,31 +38,33 @@ const Form = (props) => {
     console.log("addUser", res);
   };
   return (
-    <form action="" onSubmit={onHandleSubmit}>
-      <div>
-        <label htmlFor="title"></label>
-        <input
-          type="text"
-          id="title"
-          name="title"
-          placeholder="Enter title here"
-          value={formData.title}
-          onChange={handleChangeText}
-        />
-      </div>
-      <div>
-        <label htmlFor="content"></label>
-        <input
-          type="text"
-          id="content"
-          name="content"
-          placeholder="Enter content here"
-          value={formData.content}
-          onChange={handleChangeText}
-        />
-      </div>
+    <>
+      <form action="" onSubmit={onHandleSubmit}>
+        <div>
+          <label htmlFor="title"></label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Enter title here"
+            value={formData.title}
+            onChange={handleChangeText}
+          />
+        </div>
+        <div>
+          <label htmlFor="content"></label>
+          <input
+            type="text"
+            id="content"
+            name="content"
+            placeholder="Enter content here"
+            value={formData.content}
+            onChange={handleChangeText}
+          />
+        </div>
+      </form>
       <button type="submit">Submit</button>
-    </form>
+    </>
   );
 };
 
